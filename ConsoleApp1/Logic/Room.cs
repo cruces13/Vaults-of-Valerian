@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.Logic
+﻿namespace Application.Logic
 {
     public class Room(string Name, string Description, string[] Items, string[] Enemies)
     {

@@ -1,12 +1,12 @@
-﻿namespace ConsoleApp1.Logic
+﻿namespace Application.Logic
 {
     public class Program
     {
         // Main method to start the game
-        static void Main(string[] args)
+        static void Main()
         {
             //Initialize the Program
-            Program program = new Program();
+            _ = new Program();
         }
          
         
@@ -14,7 +14,7 @@
         public Program()
         {
             // Initialize the game state
-            gameState game = new gameState();
+            GameState game = new GameState();
             string startingMessage = "You wake up in a dark room. Outside the open door, you can go LEFT or RIGHT.\n" +
                 $"You have {game.Player.Health} health.\n" +
                 $"You have {game.Player.Strength} strength.\n" +

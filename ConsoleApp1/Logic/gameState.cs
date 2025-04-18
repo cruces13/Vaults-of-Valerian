@@ -1,14 +1,14 @@
 ﻿using System.Text.Json;
 
-namespace ConsoleApp1.Logic
+namespace Application.Logic
 {
-    internal class gameState
+    internal class GameState
     {
         public Player Player { get; private set; }
         public Enemy[] Enemies { get; private set; }
         private Dictionary<string, Room> rooms = [];
 
-        public gameState()
+        public GameState()
         {
             string Name = "Player Name";
             string[] startingInventory = { "Sword", "Compass" };
@@ -35,7 +35,7 @@ namespace ConsoleApp1.Logic
         private void LoadRooms()
         {
             // Load the rooms from rooms.json
-            string filePath = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "Data", "rooms.json"));
+            string filePath = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "Data", "Rooms.json"));
             Console.WriteLine($"Looking for rooms.json at: {filePath}");
             if (File.Exists(filePath))
             {

@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.Logic
+﻿namespace Application.Logic
 {
     public class Enemy(string Name , int health, int strength, int defense)
     {

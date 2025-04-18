@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.Logic
+﻿namespace Application.Logic
 {
     public class Player(string Name, string[] inventory, int health, int strength, int defense, string location, int gold)
     {
