@@ -1,0 +1,90 @@
+[
+    {
+        "Name": "STARTING ROOM",
+        "Description": "A dimly lit room with stone walls and a wooden door.",
+        "Items": [],
+        "Enemies": [],
+        "LinksTo": [
+            "LEFT",
+            "RIGHT"
+        ],
+        "LinksFrom": []
+    },
+    {
+        "Name": "LEFT",
+        "Description": "Dank & musty",
+        "Items": [ "Shield" ],
+        "Enemies": [ "Goblin" ],
+        "LinksTo": [
+            "RIGHT",
+            "HALLWAY"
+        ],
+        "LinksFrom": [
+            "STARTING ROOM"
+        ]
+    },
+    {
+        "Name": "RIGHT",
+        "Description": "BRIGHT & clean",
+        "Items": [ "Potion" ],
+        "Enemies": [ "Stone Golem" ],
+        "LinksTo": [
+            "TREASURE CHAMBER",
+            "ARMORY"
+        ],
+        "LinksFrom": [
+            "STARTING ROOM"
+        ]
+    },
+    {
+        "Name": "HALLWAY",
+        "Description": "A narrow corridor with flickering torches.",
+        "Items": [ "Torch" ],
+        "Enemies": [ "Rat" ],
+        "LinksTo": [
+            "LIBRARY"
+        ],
+        "LinksFrom": [
+            "LEFT"
+        ]
+    },
+    {
+        "Name": "TREASURE CHAMBER",
+        "Description": "Sparkling with gold coins scattered across the floor.",
+        "Items": [ "Gold Coin" ],
+        "Enemies": [],
+        "LinksTo": [
+            "LIBRARY"
+        ],
+        "LinksFrom": [
+            "RIGHT"
+        ]
+    },
+    {
+        "Name": "ARMORY",
+        "Description": "Rows of rusted weapons and armor line the walls.",
+        "Items": [ "+1 Sword" ],
+        "Enemies": [ "Skeleton" ],
+        "LinksTo": [
+            "LIBRARY",
+            "STARTING ROOM"
+        ],
+        "LinksFrom": [
+            "RIGHT"
+        ]
+    },
+    {
+        "Name": "LIBRARY",
+        "Description": "Musty old tomes piled high on ancient shelves.",
+        "Items": [ "Ancient Book" ],
+        "Enemies": [ "Ghost" ],
+        "LinksTo": [
+            "STARTING ROOM"
+        ],
+        "LinksFrom": [
+            "HALLWAY",
+            "TREASURE CHAMBER",
+            "ARMORY"
+        ]
+    }
+]

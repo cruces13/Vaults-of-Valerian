@@ -1,0 +1,8 @@
+{
+    "Enemies": {
+        "Name": "Goblin",
+        "health": "5",
+        "strength": "2",
+        "defense": "1"
+    }
+}
